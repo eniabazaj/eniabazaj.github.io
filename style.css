@@ -7,30 +7,25 @@
   --lilac: #cd8eff;
 }
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-}
-
 body {
   background-color: var(--blackish);
   font-family: 'Source Code Pro', monospace;
-  min-height: 100vh;
   color: #fff;
-  font-size: 14px;
+  font-size: 0.8em;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.container {
-  margin-top: 100px;
-  width: 550px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+
+
+@media screen and (max-width: 850px) {
+  body {
+    width: 10rem;
+    margin: 10px;
+    text-align: justify;
+  }
 }
 
 h1 {
@@ -60,6 +55,11 @@ padding: 0;
 padding-left: 20px;
 }
 
+@media screen and (max-width: 850px) {
+  ul {
+  padding: 0;
+  }
+}
 
 .button {
   display: inline-flex;
@@ -76,6 +76,7 @@ padding-left: 20px;
   justify-content: center;
   overflow: hidden;
 }
+
 
 
 a {
@@ -116,18 +117,4 @@ footer {
 
 #button:hover a {
   color: var(--fuxia);
-}
-
-
-@media (max-width: 800px) {
-  body {
-    margin: 0;
-    text-align: center;
-  }
-
-
-  ul {
-  padding: 0;
-  }
-
 }
