@@ -16,14 +16,13 @@
 body {
   font-size: 14px;
   font-family: 'Montserrat', sans-serif;
-  background-color: var(--white);
+  background-color: ##3E3E45;
   color: grey;
   font-weight: 400;
 }
 
 
 header {
-  background-image: var(--white);
   color: grey;
   display: flex;
   flex-direction: row;
